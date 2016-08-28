@@ -1119,8 +1119,8 @@ static struct its_device *its_create_device(struct its_node *its, u32 dev_id,
 	unsigned long flags;
 	u16 *col_map = NULL;
 	void *itt;
-	int lpi_base;
-	int nr_lpis;
+	int lpi_base = 0;
+	int nr_lpis = 0;
 	int nr_ites;
 	int sz;
 
