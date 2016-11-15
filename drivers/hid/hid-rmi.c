@@ -910,7 +910,6 @@ static int rmi_input_configured(struct hid_device *hdev, struct hid_input *hi)
 exit:
 	hid_device_io_stop(hdev);
 	hid_hw_close(hdev);
-
 	return ret;
 }
 
