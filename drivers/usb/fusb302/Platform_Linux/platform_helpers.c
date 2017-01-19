@@ -491,7 +491,7 @@ void fusb_GPIO_Cleanup(void)
     }
 #endif // FSC_INTERRUPT_TRIGGERED
 
-    if (gpio_is_valid(chip->gpio_IntN) >= 0)
+    if (gpio_is_valid(chip->gpio_IntN) == 0)
     {
 #ifdef FSC_DEBUG
         gpio_unexport(chip->gpio_IntN);
@@ -519,7 +519,7 @@ void fusb_GPIO_Cleanup(void)
 #endif
 
 #ifdef FSC_DEBUG
-    if (gpio_is_valid(chip->dbg_gpio_StateMachine) >= 0)
+    if (gpio_is_valid(chip->dbg_gpio_StateMachine) == 0)
     {
         gpio_unexport(chip->dbg_gpio_StateMachine);
         gpio_free(chip->dbg_gpio_StateMachine);
