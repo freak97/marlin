@@ -405,7 +405,7 @@ KBUILD_CFLAGS   := -Werror -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Wno-format-security \
 		   -std=gnu89
 
-KBUILD_CFLAGS	+= -mcpu=cortex-a57 -ftree-vectorize -Wno-unused-const-variable -Wno-error=misleading-indentation -Wno-error=bool-compare -Wno-error=return-local-addr -Wno-misleading-indentation
+KBUILD_CFLAGS	+= -mcpu=cortex-a57 -ftree-vectorize -Wno-unused-const-variable -Wno-error=return-local-addr
 
 # Snapdragon 820 doesn't need 835769/843419 erratum fixes
 # some toolchain enables those fixes automatically, so opt-out
