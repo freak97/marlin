@@ -535,11 +535,6 @@ mark_source_chains(const struct xt_table_info *newinfo,
 					/* This a jump; chase it. */
 					duprintf("Jump rule %u -> %u\n",
 						 pos, newpos);
-					if (!xt_find_jump_offset(offsets, newpos,
-								 newinfo->number))
-						return 0;
-					e = (struct ipt_entry *)
-						(entry0 + newpos);
 				} else {
 					/* ... this is a fallthru */
 					newpos = pos + e->next_offset;
