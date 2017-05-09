@@ -1,6 +1,10 @@
 VERSION = 3
 PATCHLEVEL = 18
+<<<<<<< HEAD
 SUBLEVEL = 39
+=======
+SUBLEVEL = 40
+>>>>>>> ce0c7f1... Merge 3.18.40 into android-msm-marlin-3.18
 EXTRAVERSION =
 NAME = Shuffling Zombie Juror
 
